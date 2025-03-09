@@ -23,7 +23,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
     origin: 'https://jackbeltimsv2.vercel.app',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
 app.options('*', cors());
